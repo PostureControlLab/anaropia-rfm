@@ -1,0 +1,29 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.balancecontrol.exe",
+   "bindings" : {
+      "/actions/default" : {
+         "poses" : [
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/waist/pose/raw"
+            }
+         ],
+         "sources" : []
+      },
+      "/actions/htc_viu" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "vive_tracker_waist",
+   "description" : "",
+   "name" : "Hip tracker (Waist)",
+   "options" : {},
+   "simulated_actions" : []
+}

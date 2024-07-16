@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "anaropia-legacy",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\biosmanager\\Source\\Repos\\Uni\\PostureControlLab\\Balance XR\\anaropia-legacy\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "anaropia-legacy [Testing]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.balancecontrol.exe",
+   "bindings" : {
+      "/actions/default" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/chest/pose/raw"
+            }
+         ],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/htc_viu" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/mixedreality" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "vive_tracker_chest",
+   "description" : "",
+   "name" : "Shoulder tracker (Chest)",
+   "options" : {},
+   "simulated_actions" : []
+}

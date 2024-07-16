@@ -1,0 +1,32 @@
+{
+  "bindings": {
+    "/actions/default": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [
+        {
+          "path": "/user/head/proximity",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/headsetonhead"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    },
+    "/actions/htc_viu": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive",
+  "description": "",
+  "name": "vive defaults"
+}

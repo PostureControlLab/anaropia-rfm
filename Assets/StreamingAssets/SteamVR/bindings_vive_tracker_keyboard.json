@@ -1,0 +1,12 @@
+{
+  "bindings": {
+    "/actions/htc_viu": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_tracker_keyboard"
+}

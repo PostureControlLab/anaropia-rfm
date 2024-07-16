@@ -1,0 +1,30 @@
+{
+  "bindings": {
+    "/actions/htc_viu": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/default": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [
+        {
+          "path": "/user/head/proximity",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/headsetonhead"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_cosmos"
+}
