@@ -1,6 +1,6 @@
-# Anaropia
+# Anaropia RFM
 
-Balance-related experiments and measurements in virtual reality.
+Virtual reality experiment framework to investigate the visual contribution to human balance.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Balance-related experiments and measurements in virtual reality.
 3. Assign the following tracker roles:
     - Shoulder tracker: Chest role
     - Hip tracker: Waist role
+4. Run through Unity editor or build (recommended for better performance).
 
 ## Scenes
 
