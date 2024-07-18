@@ -26,7 +26,7 @@ Virtual reality experiment framework to investigate the visual contribution to h
 ## Stimuli
 
 Stimuli sets must be placed in `stimuli` directory where also the executable is located . For each set, create a folder with its name. Each set/folder can contain up to 9 stimuli files which correspond to the alphanumeric or numpad keys 1 to 9. The files must be called `vr_stim_<NUMBER>.csv` (e.g. `vr_stim_4.csv`). 
-The stimuli set can be selected at runtime for the room and screen. The 0 key stops the current running stimuli.
+The stimuli set can be selected at runtime for the room (numpad) and screen (number row). The 0 key stops the current running stimuli.
 
 Stimuli are CSV files and must start with a header `time,pitch,roll,yaw,trans_ap,trans_ml,trans_ud,scale`.
 Each row contains the absolute time (in seconds), 3D rotation angles (in degree, relative to rotation center), 3D position (in meters, relative to world space position of screen or room) and local scale for all axes. You can specify any combination of columns and except `time`, all columns can be omitted.
@@ -74,24 +74,25 @@ Screen distance from floor: 0.33 m
 
 ## LabJack
 
-To use analog signals to control the screen/room, attach a LabJack T7 via USB and set the stimuli to `__LabJack`. In this mode, only manual recording using the `R` key is available.
+To use analog signals to control the screen/room, attach a LabJack T4 or T7 via USB and set the stimuli to `__LabJack`. In this mode, only manual recording using the `R` key (screen) or `*` (numpad, room) is available. You can freely map the analog input to rotation and translation in the bottom right corner of the UI.
+The input `AIN0` of the LabJack T4 or T7 can be used as a trigger to start and stop a recording. As long as the voltage is higher or equal to 1.5V the recording will run.
 
-| Input             | Mapping                | Scaling |
-|-------------------|------------------------|---------|
-| `AIN0`            | Screen pitch           | 1°/V    |
-| `AIN1`            | Screen roll            | 1°/V    |
-| `AIN2`            | Screen yaw             | 1°/V    |
-| `AIN3`            | Screen anterior-posterior | 10 cm/V |
-| `AIN4`            | Screen mediolateral    | 10 cm/V |
-| `AIN5`            | Screen up/down         | 10 cm/V |
-| `AIN6`            | Screen scale           | 1:1     |
-| `AIN7`            | Room pitch             | 1°/V    |
-| `AIN8`            | Room roll              | 1°/V    |
-| `AIN9`            | Room yaw               | 1°/V    |
-| `AIN10`           | Room anterior-posterior   | 10 cm/V |
-| `AIN11`           | Room mediolateral      | 10 cm/V |
-| `AIN12`           | Room up/down           | 10 cm/V |
-| `AIN13`           | Room scale             | 1:1     |
+| Mapping                | Scaling |
+|------------------------|---------|
+| Screen pitch           | 1°/V    |
+| Screen roll            | 1°/V    |
+| Screen yaw             | 1°/V    |
+| Screen anterior-posterior | 10 cm/V |
+| Screen mediolateral    | 10 cm/V |
+| Screen up/down         | 10 cm/V |
+| Screen scale           | 1:1     |
+| Room pitch             | 1°/V    |
+| Room roll              | 1°/V    |
+| Room yaw               | 1°/V    |
+| Room anterior-posterior   | 10 cm/V |
+| Room mediolateral      | 10 cm/V |
+| Room up/down           | 10 cm/V |
+| Room scale             | 1:1     |
 
 ## Floor fix
 
